@@ -6,16 +6,23 @@
   <script src="lib/angular-ui-router.js"></script>
   <script src="app.js"></script>
   <script src="controllers/TerminalController.js"></script>
+  <script src="controllers/StatusController.js"></script>
+  <script src="services/StatusFactory.js"></script>
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/space_terminal.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <p>723.3434</p>
-    <p>EARTH.X12</p>
-    <p>REGNUM: N23432B</p>
+    <p>723.3434___EARTH.{X12}___REGNUM:N23432B</p>
 
     <div ui-view></div>
+
+    <p id="status" ng-controller="StatusCtrl">
+      >LIFE-SUPPORT:{{ life_support }}
+      >SAILS:{{ sail }}
+      >LIFEFORMS-DETECTED: {{ lifeform }}>>
+    </p>
+
   </div>
 </body>
 </html>
