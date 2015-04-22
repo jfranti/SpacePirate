@@ -1,0 +1,12 @@
+body {
+  background-color: #292E28;
+  color: #81D640;
+  text-shadow: 0 0 6px #6BD128;
+  font-weight: 100;
+  font-family: Courier;
+}
+
+h1 {
+  color: #81D640;
+  text-shadow: 0 0 11px #6BD128;
+}
