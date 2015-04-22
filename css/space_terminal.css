@@ -4,9 +4,45 @@ body {
   text-shadow: 0 0 6px #6BD128;
   font-weight: 100;
   font-family: Courier;
+  margin: 30px;
+  border: 3px double #81D640;
 }
 
-h1 {
+
+a {
   color: #81D640;
+  text-shadow: 0 0 6px #6BD128;
+}
+
+a:hover {
+  color: #BFDB32;
+  text-shadow: 0 0 10px #D2F230;
+  cursor: pointer;
+}
+
+h3 {
   text-shadow: 0 0 11px #6BD128;
+}
+
+.blink {
+      animation: blink 1s steps(2, start) infinite;
+      -webkit-animation: blink .85s steps(10, end) infinite;
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink {
+      to {
+        color: #292E28;
+        text-shadow: 0 0 3px #5C7549;
+      }
+    }
+
+.terminal {
+  text-shadow: 0 0 6px #6BD128;
+  background-color: #292E28;
+  border: 0px;
+  box-shadow: 0 0 0;
 }

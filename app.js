@@ -4,7 +4,18 @@ spacePirates.config(function($stateProvider) {
 
   $stateProvider.state('start', {
     url: '',
-    templateUrl: 'partials/start.html'
+    templateUrl: 'partials/start.html',
+    controller: 'TerminalCtrl'
   });
+
+  $stateProvider.state('win', {
+    url: 'win',
+    templateUrl: 'partials/win.html',
+  })
+
+  $stateProvider.state('death', {
+    url: 'death',
+    templateUrl: 'partials/death.html'
+  })
 
 });
