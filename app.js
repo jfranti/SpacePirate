@@ -43,6 +43,21 @@ $stateProvider.state('raise_sails_online', {
   }
 });
 
+$stateProvider.state('raise_sails_offline', {
+  url: 'raise_sails_offline',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/raise_sails_offline.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+
 
   $stateProvider.state('death', {
     url: 'death',
