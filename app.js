@@ -4,13 +4,29 @@ spacePirates.config(function($stateProvider) {
 
   $stateProvider.state('start', {
     url: '',
-    templateUrl: 'partials/start.html',
-    controller: 'TerminalCtrl'
+    views: {
+      'terminal': {
+        templateUrl: 'partials/start.html'
+      },
+      'status': {
+        templateUrl: 'status.html',
+        controller: 'StatusCtrl'
+      }
+    }
   });
 
   $stateProvider.state('win', {
     url: 'win',
-    templateUrl: 'partials/win.html',
+    views: {
+      'terminal': {
+        templateUrl: 'partials/win.html',
+        controller: 'StatusCtrl'
+      },
+      'status': {
+        templateUrl: 'status.html',
+        controller: 'StatusCtrl'
+      }
+    }
 });
 
   $stateProvider.state('death', {
@@ -20,83 +36,213 @@ spacePirates.config(function($stateProvider) {
 
   $stateProvider.state('engines', {
     url: 'engines',
-    templateUrl: 'partials/engine/engines.html'
+    views: {
+      'terminal': {
+        templateUrl: 'partials/engine/engines.html',
+        controller: 'StatusCtrl'
+      },
+      'status': {
+        templateUrl: 'status.html',
+        controller: 'StatusCtrl'
+      }
+    }
 });
 
   $stateProvider.state('raise_sails_false', {
     url: 'raise_sails_false',
-    templateUrl: 'partials/engine/raise_sails_false.html'
+    views: {
+      'terminal': {
+        templateUrl: 'partials/engine/raise_sails_false.html',
+        controller: 'StatusCtrl'
+      },
+      'status': {
+        templateUrl: 'status.html',
+        controller: 'StatusCtrl'
+      }
+    }
 });
 
   $stateProvider.state('reboot_prop_false', {
     url: 'reboot_prop_false',
-    templateUrl: 'partials/engine/reboot_prop_false.html'
+    views: {
+      'terminal': {
+        templateUrl: 'partials/engine/reboot_prop_false.html',
+        controller: 'StatusCtrl'
+      },
+      'status': {
+        templateUrl: 'status.html',
+        controller: 'StatusCtrl'
+      }
+    }
 });
 
   $stateProvider.state('engage_engines_false', {
     url: 'engage_engines_false',
-    templateUrl: 'partials/engine/engage_engines_false.html'
+    views: {
+      'terminal': {
+        templateUrl: 'partials/engine/engage_engines_false.html',
+        controller: 'StatusCtrl'
+      },
+      'status': {
+        templateUrl: 'status.html',
+        controller: 'StatusCtrl'
+      }
+    }
 });
 
   $stateProvider.state('nav', {
     url: 'nav',
-    templateUrl: 'partials/engine/nav.html'
+    views: {
+      'terminal': {
+        templateUrl: 'partials/engine/nav.html',
+        controller: 'StatusCtrl'
+      },
+      'status': {
+        templateUrl: 'status.html',
+        controller: 'StatusCtrl'
+      }
+    }
 });
 
 $stateProvider.state('engine_status_failure', {
   url: 'engine_status_failure',
-  templateUrl: 'partials/engine/engine_status_failure.html'
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/engine_status_failure.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
 });
 
 $stateProvider.state('lifesupport', {
   url: 'lifesupport',
-  templateUrl: 'partials/lifesupport/lifesupport.html'
+  views: {
+    'terminal': {
+      templateUrl: 'partials/lifesupport/lifesupport.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
 });
 
 $stateProvider.state('cabin_repress', {
   url: 'cabin_repress',
-  templateUrl: 'partials/lifesupport/cabin_repress.html'
+  views: {
+    'terminal': {
+      templateUrl: 'partials/lifesupport/cabin_repress.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
 });
 
 $stateProvider.state('more_air', {
   url: 'more_air',
-  templateUrl: 'partials/lifesupport/more_air.html'
+  views: {
+    'terminal': {
+      templateUrl: 'partials/lifesupport/more_air.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+
 });
 
 $stateProvider.state('security', {
   url: 'security',
-  templateUrl: 'partials/security/security.html',
-  controller: 'StatusCtrl'
+  views: {
+    'terminal': {
+      templateUrl: 'partials/security/security.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
 });
 
 $stateProvider.state('lifeform_scan', {
   url: 'lifeform_scan',
-  templateUrl: 'partials/security/lifeform_scan.html',
-  controller: 'StatusCtrl'
+  views: {
+    'terminal': {
+      templateUrl: 'partials/security/lifeform_scan.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
 });
 
 $stateProvider.state('identify_lifeforms', {
   url: 'identify_lifeforms',
-  templateUrl: 'partials/security/identify_lifeforms.html',
-  controller: 'StatusCtrl'
+  views: {
+    'terminal': {
+      templateUrl: 'partials/security/identify_lifeforms.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
 });
 
 $stateProvider.state('crew_status', {
   url: 'crew_status',
-  templateUrl: 'partials/security/crew_status.html',
-  controller: 'StatusCtrl'
+  views: {
+    'terminal': {
+      templateUrl: 'partials/security/crew_status.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
 });
 
 $stateProvider.state('seal_bulkheads', {
   url: 'seal_bulkheads',
-  templateUrl: 'partials/security/seal_bulkheads.html',
-  controller: 'StatusCtrl'
+  views: {
+    'terminal': {
+      templateUrl: 'partials/security/seal_bulkheads.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
 });
 
 $stateProvider.state('open_bulkheads', {
   url: 'open_bulkheads',
-  templateUrl: 'partials/security/open_bulkheads.html',
-  controller: 'StatusCtrl'
+  views: {
+    'terminal': {
+      templateUrl: 'partials/security/open_bulkheads.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
 });
 
 

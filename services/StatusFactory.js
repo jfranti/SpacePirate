@@ -1,13 +1,20 @@
 spacePirates.factory('StatusFactory', function StatusFactory() {
   var factory = {};
 
-  factory.life_support = "_undefined";
-  factory.sail = "_undefined";
-  factory.lifeform = "_undefined";
+  factory.life_support = "undefined";
+  factory.sail = "undefined";
+  factory.lifeform = "undefined";
+  factory.bulkheads = "open";
+  factory.power = "reserve";
 
-  factory.update_lifeform = function() {
-    factory.lifeform = 4;
+
+  factory.update_lifeform_count = function() {
+    factory.lifeform = 2;
   };
+
+  factory.seal_bulkheads = function() {
+    factory.bulkheads = "sealed";
+  }
 
   return factory;
 });

@@ -3,6 +3,9 @@ spacePirates.controller('StatusCtrl', function StatusCtrl($scope, StatusFactory)
   $scope.life_support = StatusFactory.life_support;
   $scope.sail = StatusFactory.sail;
   $scope.lifeform = StatusFactory.lifeform;
+  $scope.bulkheads = StatusFactory.bulkheads;
+  $scope.power = StatusFactory.power;
+
   //change the properies methods here
 
   $scope.disableLifeSupport = function() {
@@ -10,11 +13,12 @@ spacePirates.controller('StatusCtrl', function StatusCtrl($scope, StatusFactory)
   }
 
 
-  $scope.update_lifeform = function() {
-    StatusFactory.update_lifeform();
+  $scope.update_lifeform_count = function() {
+    StatusFactory.update_lifeform_count();
   }
 
-
-
+  $scope.seal_bulkheads = function() {
+    StatusFactory.seal_bulkheads();
+  }
 
 });
