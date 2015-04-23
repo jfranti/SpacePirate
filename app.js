@@ -65,14 +65,39 @@ $stateProvider.state('more_air', {
 
 $stateProvider.state('security', {
   url: 'security',
-  templateUrl: 'partials/security/security.html'
+  templateUrl: 'partials/security/security.html',
+  controller: 'StatusCtrl'
 });
 
 $stateProvider.state('lifeform_scan', {
   url: 'lifeform_scan',
-  templateUrl: 'partials/security/lifeform_scan.html'
+  templateUrl: 'partials/security/lifeform_scan.html',
+  controller: 'StatusCtrl'
 });
 
+$stateProvider.state('identify_lifeforms', {
+  url: 'identify_lifeforms',
+  templateUrl: 'partials/security/identify_lifeforms.html',
+  controller: 'StatusCtrl'
+});
+
+$stateProvider.state('crew_status', {
+  url: 'crew_status',
+  templateUrl: 'partials/security/crew_status.html',
+  controller: 'StatusCtrl'
+});
+
+$stateProvider.state('seal_bulkheads', {
+  url: 'seal_bulkheads',
+  templateUrl: 'partials/security/seal_bulkheads.html',
+  controller: 'StatusCtrl'
+});
+
+$stateProvider.state('open_bulkheads', {
+  url: 'open_bulkheads',
+  templateUrl: 'partials/security/open_bulkheads.html',
+  controller: 'StatusCtrl'
+});
 
 
 

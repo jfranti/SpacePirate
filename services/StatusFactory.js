@@ -5,5 +5,9 @@ spacePirates.factory('StatusFactory', function StatusFactory() {
   factory.sail = "_undefined";
   factory.lifeform = "_undefined";
 
+  factory.update_lifeform = function() {
+    factory.lifeform = 4;
+  };
+
   return factory;
 });
