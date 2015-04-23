@@ -203,6 +203,20 @@ $stateProvider.state('lifeform_scan', {
   }
 });
 
+$stateProvider.state('identify_lifeforms_undefined', {
+  url: 'identify_lifeforms',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/security/identify_lifeforms_undefined.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
 $stateProvider.state('identify_lifeforms_1', {
   url: 'identify_lifeforms',
   views: {
