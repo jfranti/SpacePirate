@@ -1,0 +1,69 @@
+body {
+  background-color: #28292E;
+  color: #68BAE3;
+  text-shadow: 0 0 6px #69E2F5;
+  font-weight: 100;
+  font-family: Courier;
+  margin: 30px;
+  border: 3px double #68BAE3;
+  height: 400px;
+  max-width: 900px;
+}
+
+.container {
+  max-width: 900px;
+
+}
+
+.log {
+  margin-bottom: 50px;
+}
+
+.sys_command {
+  line-height: .8;
+  margin-bottom: 50px;
+}
+
+
+a {
+  color: #68BAE3;
+  text-shadow: 0 0 6px #69E2F5;
+}
+
+a:hover {
+  color: #32DB40;
+  text-shadow: 0 0 10px #28D14A;
+  cursor: pointer;
+}
+
+h3 {
+  text-shadow: 0 0 11px #69E2F5;
+}
+
+.blink {
+      animation: blink 1s steps(2, start) infinite;
+      -webkit-animation: blink .85s steps(10, end) infinite;
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink {
+      to {
+        color: #28292E;
+        text-shadow: 0 0 3px #5C7549;
+      }
+    }
+
+.terminal {
+  text-shadow: 0 0 6px #69E2F5;
+  background-color: #28292E;
+  border: 0px;
+  box-shadow: 0 0 0;
+}
+
+#status {
+  position: fixed;
+  top: 395px;
+}

@@ -1,9 +1,9 @@
 spacePirates.factory('StatusFactory', function StatusFactory() {
   var factory = {};
 
-  factory.life_support = "_undefined";
-  factory.sail = "_undefined";
-  factory.lifeform = "_undefined";
-
+  factory.life_support = "Nominal";
+  factory.sail = "Undeployed";
+  factory.lifeform = 2;
+  
   return factory;
 });
