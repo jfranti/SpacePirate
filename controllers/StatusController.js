@@ -21,4 +21,12 @@ spacePirates.controller('StatusCtrl', function StatusCtrl($scope, StatusFactory)
     StatusFactory.seal_bulkheads();
   }
 
+  $scope.vent_engine_room = function() {
+    if ($scope.bulkheads === "open") {
+      //death
+    }
+    else {
+      StatusFactory.vent_engine_room();
+    }
+  }
 });

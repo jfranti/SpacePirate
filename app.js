@@ -245,6 +245,34 @@ $stateProvider.state('open_bulkheads', {
   }
 });
 
+$stateProvider.state('sealed', {
+  url: '/sealed',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/win.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('open', {
+  url: '/open',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/death.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
 
 
 
