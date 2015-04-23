@@ -62,7 +62,7 @@ spacePirates.config(function($stateProvider) {
     }
 });
 
-  $stateProvider.state('reboot_prop_false', {
+  $stateProvider.state('reboot_prop_reserve', {
     url: 'reboot_prop_false',
     views: {
       'terminal': {
@@ -74,6 +74,20 @@ spacePirates.config(function($stateProvider) {
         controller: 'StatusCtrl'
       }
     }
+});
+
+$stateProvider.state('reboot_prop_nominal', {
+  url: 'reboot_prop_false',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/reboot_prop_true.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
 });
 
   $stateProvider.state('engage_engines_false', {
@@ -189,7 +203,7 @@ $stateProvider.state('lifeform_scan', {
   }
 });
 
-$stateProvider.state('identify_lifeforms/1', {
+$stateProvider.state('identify_lifeforms_1', {
   url: 'identify_lifeforms',
   views: {
     'terminal': {
@@ -203,7 +217,7 @@ $stateProvider.state('identify_lifeforms/1', {
   }
 });
 
-$stateProvider.state('identify_lifeforms/2', {
+$stateProvider.state('identify_lifeforms_2', {
   url: 'identify_lifeforms',
   views: {
     'terminal': {
@@ -218,7 +232,7 @@ $stateProvider.state('identify_lifeforms/2', {
 });
 
 
-$stateProvider.state('crew_status/2', {
+$stateProvider.state('crew_status_2', {
   url: 'crew_status',
   views: {
     'terminal': {
@@ -232,7 +246,7 @@ $stateProvider.state('crew_status/2', {
   }
 });
 
-$stateProvider.state('crew_status/1', {
+$stateProvider.state('crew_status_1', {
   url: 'crew_status',
   views: {
     'terminal': {
@@ -275,7 +289,7 @@ $stateProvider.state('open_bulkheads', {
 });
 
 $stateProvider.state('sealed', {
-  url: '/sealed',
+  url: 'sealed',
   views: {
     'terminal': {
       templateUrl: 'partials/lifesupport/vent.html',
@@ -289,7 +303,7 @@ $stateProvider.state('sealed', {
 });
 
 $stateProvider.state('open', {
-  url: '/open',
+  url: 'open',
   views: {
     'terminal': {
       templateUrl: 'partials/ventdeath.html',
