@@ -14,19 +14,22 @@ spacePirates.controller('StatusCtrl', function StatusCtrl($scope, StatusFactory)
 
 
   $scope.update_lifeform_count = function() {
-    StatusFactory.update_lifeform_count();
+    if ($scope.lifeform === "undefined") {
+      StatusFactory.update_lifeform_count();
+    }
   }
 
   $scope.seal_bulkheads = function() {
     StatusFactory.seal_bulkheads();
   }
 
+  $scope.open_bulkheads = function() {
+    StatusFactory.open_bulkheads();
+  }
+
   $scope.vent_engine_room = function() {
-    if ($scope.bulkheads === "open") {
-      //death
-    }
-    else {
-      StatusFactory.vent_engine_room();
+    if ($scope.bulkheads === "sealed") {
+      StatusFactory.kill_intruder();
     }
   }
 });

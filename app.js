@@ -189,7 +189,21 @@ $stateProvider.state('lifeform_scan', {
   }
 });
 
-$stateProvider.state('identify_lifeforms', {
+$stateProvider.state('identify_lifeforms/1', {
+  url: 'identify_lifeforms',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/security/identify_lifeforms_1.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('identify_lifeforms/2', {
   url: 'identify_lifeforms',
   views: {
     'terminal': {
@@ -203,11 +217,26 @@ $stateProvider.state('identify_lifeforms', {
   }
 });
 
-$stateProvider.state('crew_status', {
+
+$stateProvider.state('crew_status/2', {
   url: 'crew_status',
   views: {
     'terminal': {
       templateUrl: 'partials/security/crew_status.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('crew_status/1', {
+  url: 'crew_status',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/security/crew_status_1.html',
       controller: 'StatusCtrl'
     },
     'status': {
@@ -249,7 +278,7 @@ $stateProvider.state('sealed', {
   url: '/sealed',
   views: {
     'terminal': {
-      templateUrl: 'partials/win.html',
+      templateUrl: 'partials/lifesupport/vent.html',
       controller: 'StatusCtrl'
     },
     'status': {
@@ -263,7 +292,7 @@ $stateProvider.state('open', {
   url: '/open',
   views: {
     'terminal': {
-      templateUrl: 'partials/death.html',
+      templateUrl: 'partials/ventdeath.html',
       controller: 'StatusCtrl'
     },
     'status': {
