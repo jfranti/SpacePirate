@@ -305,6 +305,20 @@ $stateProvider.state('identify_lifeforms_2', {
   }
 });
 
+$stateProvider.state('crew_status_undefined', {
+  url: 'crew_status',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/security/crew_status.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
 
 $stateProvider.state('crew_status_2', {
   url: 'crew_status',
