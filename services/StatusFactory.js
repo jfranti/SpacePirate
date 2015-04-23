@@ -6,11 +6,10 @@ spacePirates.factory('StatusFactory', function StatusFactory() {
   factory.lifeform = "undefined";
   factory.bulkheads = "open";
   factory.power = "reserve";
+  factory.eng_comp_status = "offline";
 
 
   factory.update_lifeform_count = function() {
-    
-
     factory.lifeform = 2;
   };
 
@@ -31,5 +30,13 @@ spacePirates.factory('StatusFactory', function StatusFactory() {
     factory.life_support = "critical";
   }
 
+  factory.reboot_eng_comp = function() {
+    factory.eng_comp_status = "online";
+  }
+
+  factory.raise_sails = function() {
+    factory.sail = "deployed";
+  }
+  
   return factory;
 });

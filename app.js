@@ -15,7 +15,7 @@ spacePirates.config(function($stateProvider) {
     }
   });
 
-  $stateProvider.state('win', {
+  $stateProvider.state('nav_deployed', {
     url: 'win',
     views: {
       'terminal': {
@@ -28,6 +28,21 @@ spacePirates.config(function($stateProvider) {
       }
     }
 });
+
+$stateProvider.state('raise_sails_online', {
+  url: 'win',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/raise_sails_online.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
 
   $stateProvider.state('death', {
     url: 'death',
@@ -104,19 +119,34 @@ $stateProvider.state('reboot_prop_nominal', {
     }
 });
 
-  $stateProvider.state('nav', {
-    url: 'nav',
-    views: {
-      'terminal': {
-        templateUrl: 'partials/engine/nav.html',
-        controller: 'StatusCtrl'
-      },
-      'status': {
-        templateUrl: 'status.html',
-        controller: 'StatusCtrl'
-      }
+$stateProvider.state('nav_undeployed', {
+  url: 'nav',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/nav_undeployed.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
     }
+  }
 });
+
+$stateProvider.state('nav_undefined', {
+  url: 'nav',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/nav_undefined.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
 
 $stateProvider.state('engine_status_failure', {
   url: 'engine_status_failure',

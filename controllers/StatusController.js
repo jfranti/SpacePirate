@@ -5,6 +5,7 @@ spacePirates.controller('StatusCtrl', function StatusCtrl($scope, StatusFactory)
   $scope.lifeform = StatusFactory.lifeform;
   $scope.bulkheads = StatusFactory.bulkheads;
   $scope.power = StatusFactory.power;
+  $scope.eng_comp_status = StatusFactory.eng_comp_status;
 
   //change the properies methods here
 
@@ -32,4 +33,17 @@ spacePirates.controller('StatusCtrl', function StatusCtrl($scope, StatusFactory)
       StatusFactory.kill_intruder();
     }
   }
+
+  $scope.reboot_eng_comp = function() {
+    if ($scope.power === "nominal") {
+      StatusFactory.reboot_eng_comp();
+    }
+  }
+
+  $scope.raise_sails = function() {
+    if ($scope.eng_comp_status === "online") {
+      StatusFactory.raise_sails();
+    }
+  }
+
 });
