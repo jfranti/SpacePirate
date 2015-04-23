@@ -190,6 +190,21 @@ $stateProvider.state('cabin_repress', {
   }
 });
 
+$stateProvider.state('recycle', {
+  url: 'recycle',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/lifesupport/recycle.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+
 $stateProvider.state('more_air', {
   url: 'more_air',
   views: {
