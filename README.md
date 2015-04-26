@@ -4,6 +4,11 @@ John Franti, Kyle Bulloch
 ###Date
 April 23, 2015<br />
 
+###Installation
+Download the master folder and run an AngularJS server from the main folder using the terminal command "python -m SimpleHTTPServer". you can then naviagte your browser to localhost:8000.<br /> If you're on a Windows machine, feel free to use Mongoose, which can be found below. Follow the installation instructions there.<br />
+http://cesanta.com/mongoose.shtml
+
+
 ###Description
 Space Pirate
 This is an AngluarJS game in the style of old MS-DOS text games or, if you prefer, the Choose Your Own Adventure books. In a sci-fi setting, we recreate the computer terminal you might find on a classic sci-fi spaceship, and let you discover and solve problems.
