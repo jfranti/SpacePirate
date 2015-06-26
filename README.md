@@ -1,18 +1,42 @@
-###Developers
-John Franti, Kyle Bulloch
+#Space Pirate Game
 
-###Date
-April 23, 2015<br />
+#####AngularJS Exercise for Epicodus, 04.24.2015
 
-###Description
-Space Pirate
-This is an AngluarJS game in the style of old MS-DOS text games or, if you prefer, the Choose Your Own Adventure books. In a sci-fi setting, we recreate the computer terminal you might find on a classic sci-fi spaceship, and let you discover and solve problems.
+###By Kyle K Bulloch
 
-###Installation
-Download the master folder and run an AngularJS server from the main folder using the terminal command "python -m SimpleHTTPServer". you can then naviagte your browser to localhost:8000.<br /> If you're on a Windows machine, feel free to use Mongoose, which can be found below. Follow the installation instructions there.<br />
-http://cesanta.com/mongoose.shtml
+##Description
 
-###Copyright (c) 2015 John Franti, Kyle Bulloch
+This web game sets the user at the bridge main terminal of a space pirate ship in a bad situation.  Click through the terminal items to get the ship back in shape and raise the solar sails!  This app is an exercise in AngularJS controllers, factories, and UI-Routes.
+
+##Setup
+
+Clone this repository.
+
+Open a simple HTTP server in the top level of the cloned directory.  For a mac, run the following command in your terminal:
+
+python -m SimpleHTTPServer
+
+Then open your web browser of choice to localhost:8000
+
+##Technologies Used
+
+AngularJS
+
+Angular UI-Router
+
+HTML
+
+CSS
+
+Javascript
+
+Bootstrap
+
+###Legal
+
+Copyright (c) 2015 Kyle K Bulloch
+
+This software is licensed under the MIT license.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

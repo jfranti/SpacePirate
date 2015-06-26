@@ -6,7 +6,7 @@
 <div class="sys_command">
   <p><a ui-sref='engage_engines_false'>[engage_main_propulsion]</a></p>
   <p><a ui-sref='engine_status_failure'>[report_engine_status]</a></p>
-  <p><a ui-sref='restore_power_{{ atmo_pressure }}_{{ lifeform }}' ng-click="restore_power()">[restore_power]</a></p>
+  <p><a ui-sref='restore_power_{{ atmo_pressure }}'>[restore_power] <<</a></p>
   <p><a ui-sref='reboot_prop_{{ power }}' ng-click="reboot_eng_comp()">[reboot_propulsion_computer]</a></p>
   <p><a ui-sref='raise_sails_{{ eng_comp_status }}' ng-click="raise_sails()">[raise_solar_sails]</a></p>
   <p><a ui-sref='nav_{{ sail }}'>[set_navigation]</a></p>
@@ -16,5 +16,5 @@
 </div>
 
 <p>
-    <span class="blink">ERROR:</span> sails_not_deployed_['system requires reboot']
+    Power could not be restored.  Atmospheric pressure too low for operation.
 </p>

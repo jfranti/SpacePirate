@@ -78,20 +78,6 @@ $stateProvider.state('raise_sails_offline', {
     }
 });
 
-  $stateProvider.state('raise_sails_false', {
-    url: 'raise_sails_false',
-    views: {
-      'terminal': {
-        templateUrl: 'partials/engine/raise_sails_false.html',
-        controller: 'StatusCtrl'
-      },
-      'status': {
-        templateUrl: 'status.html',
-        controller: 'StatusCtrl'
-      }
-    }
-});
-
   $stateProvider.state('reboot_prop_reserve', {
     url: 'reboot_prop_false',
     views: {
@@ -305,20 +291,6 @@ $stateProvider.state('identify_lifeforms_2', {
   }
 });
 
-$stateProvider.state('crew_status_undefined', {
-  url: 'crew_status',
-  views: {
-    'terminal': {
-      templateUrl: 'partials/security/crew_status.html',
-      controller: 'StatusCtrl'
-    },
-    'status': {
-      templateUrl: 'status.html',
-      controller: 'StatusCtrl'
-    }
-  }
-});
-
 
 $stateProvider.state('crew_status_2', {
   url: 'crew_status',
@@ -339,6 +311,20 @@ $stateProvider.state('crew_status_1', {
   views: {
     'terminal': {
       templateUrl: 'partials/security/crew_status_1.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('crew_status_undefined', {
+  url: 'crew_status',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/security/crew_status.html',
       controller: 'StatusCtrl'
     },
     'status': {
@@ -395,6 +381,76 @@ $stateProvider.state('open', {
   views: {
     'terminal': {
       templateUrl: 'partials/ventdeath.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('restore_power_nominal_undefined', {
+  url: 'restore_power',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/restore_power_intruder.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('restore_power_nominal_2', {
+  url: 'restore_power',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/restore_power_intruder.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('restore_power_critical_2', {
+  url: 'restore_power',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/restore_power_intruder.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('restore_power_critical_1', {
+  url: 'restore_power',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/restore_power_pressure.html',
+      controller: 'StatusCtrl'
+    },
+    'status': {
+      templateUrl: 'status.html',
+      controller: 'StatusCtrl'
+    }
+  }
+});
+
+$stateProvider.state('restore_power_nominal_1', {
+  url: 'restore_power',
+  views: {
+    'terminal': {
+      templateUrl: 'partials/engine/restore_power.html',
       controller: 'StatusCtrl'
     },
     'status': {

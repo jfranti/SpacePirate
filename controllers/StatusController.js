@@ -6,6 +6,7 @@ spacePirates.controller('StatusCtrl', function StatusCtrl($scope, StatusFactory)
   $scope.bulkheads = StatusFactory.bulkheads;
   $scope.power = StatusFactory.power;
   $scope.eng_comp_status = StatusFactory.eng_comp_status;
+  $scope.atmo_pressure = StatusFactory.atmo_pressure;
 
   //change the properies methods here
 
@@ -30,7 +31,17 @@ spacePirates.controller('StatusCtrl', function StatusCtrl($scope, StatusFactory)
 
   $scope.vent_engine_room = function() {
     if ($scope.bulkheads === "sealed") {
-      StatusFactory.kill_intruder();
+      StatusFactory.vent_engine_room();
+    }
+  }
+
+  $scope.cabin_repress = function() {
+    StatusFactory.cabin_repress();
+  }
+
+  $scope.restore_power = function() {
+    if (($scope.atmo_pressure === "nominal") && ($scope.lifeform === 1)) {
+      StatusFactory.restore_power();
     }
   }
 

@@ -1,0 +1,10 @@
+add requirement to repressurize cabin after venting engine room
+
+-vent engine room
+-cabin pressure = critically low
+-cabin repress
+-cabin pressure = nominal
+
+add cabin pressure status bar item
+
+only allow vent_engine_room once
