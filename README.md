@@ -2,7 +2,7 @@
 
 #####AngularJS Exercise for Epicodus, 04.24.2015
 
-###By John Franti Kyle K Bulloch
+###By Kyle K Bulloch John Franti
 
 ##Description
 
