@@ -2,7 +2,7 @@
 
 #####AngularJS Exercise for Epicodus, 04.24.2015
 
-###By Kyle K Bulloch
+###By John Franti Kyle K Bulloch
 
 ##Description
 
@@ -34,7 +34,7 @@ Bootstrap
 
 ###Legal
 
-Copyright (c) 2015 Kyle K Bulloch
+Copyright (c) 2015 Kyle K Bulloch, John Franti
 
 This software is licensed under the MIT license.
 
